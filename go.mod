@@ -1,3 +1,3 @@
-module github.com/haimait/go-utils
+module github.com/haimait/goutils
 
 go 1.18
