@@ -21,8 +21,9 @@ func TestUUID(t *testing.T) {
 }
 
 func TestUUIDFromString(t *testing.T) {
-	_, err := UUIDFromString("blah")
-	fmt.Println("err:", err)
+	uid, err := UUIDFromString("blah")
+	fmt.Println("uid:", uid) //uid: 00000000-0000-0000-0000-000000000000
+	fmt.Println("err:", err) //err: invalid UUID: "blah"
 	validUUID := "9f484882-2f18-4fd2-967d-db9663db7bea"
 	uuid, err := UUIDFromString(validUUID)
 	fmt.Printf("uuid:%v err:%v \n", uuid, err)
